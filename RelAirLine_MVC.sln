@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelAirLine_MVC", "RelAirLine_MVC\RelAirLine_MVC.csproj", "{0DB37779-879E-4573-8DD2-96645D96EF50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{CBE59FAE-975D-417D-BCB0-C679D1A39FB2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AirLineDb", "AirLineDb\AirLineDb.sqlproj", "{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,16 @@ Global
 		{0DB37779-879E-4573-8DD2-96645D96EF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB37779-879E-4573-8DD2-96645D96EF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB37779-879E-4573-8DD2-96645D96EF50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBE59FAE-975D-417D-BCB0-C679D1A39FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE59FAE-975D-417D-BCB0-C679D1A39FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE59FAE-975D-417D-BCB0-C679D1A39FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE59FAE-975D-417D-BCB0-C679D1A39FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F4FA2BB-DDFA-47EB-9049-7A76CCBACE02}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
