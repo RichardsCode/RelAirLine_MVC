@@ -4,36 +4,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    @*<link href="~/Content/relStyle.css" rel="stylesheet" />*@
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
+    <header>
+        <div class="container-fluid text-center" style="background-color:blue; height: 25vh">
+            <p class="display-4 font-weight-bold" style="color: lime; padding-top: 80px;">
+                <img class="pb-3" src="~/images/airplane.jpg" alt="airplane" width="100" height="75" />
+                <i>REL</i><span class="text-light">AirLines</span>
+            </p>
+            @*<div class="container">
+                    <label class="float-right text-light" id="signed_in_name"></label>
+                </div>*@
+        </div>
+
+        @*<div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+            </div>*@
+        <nav class="navbar navbar-expand-md justify-content-between" style="background-color: blue;">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { @class = "header_nav_links nav-item nav-link" })</li>
+                <li>@Html.ActionLink("About", "About", "Home", new { @class = "header_nav_links nav-item nav-link" })</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home", new { @class = "header_nav_links nav-item nav-link" })</li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Sign Up", "SignUp", "Home", new { @class = "header_nav_links nav-item nav-link" })</li>
+                <li>@Html.ActionLink("Sign In", "SignIn", "Home", new { @class = "header_nav_links nav-item nav-link" })</li>
+            </ul>
+        </nav>
+
+    </header>
+
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+
+    <footer>
+        <div class="jumbotron jumbotron-fluid mb-0" style="background-color: blue;">
+            <div class="container">
+                <table class="ftr table table-borderless">
+                    <tr>
+                        <th>About REL</th>
+                        <th>Customer service</th>
+                        <th>Products and services</th>
+                        <th>Follow Us</th>
+                    </tr>
+                    <tr>
+                        <td>Who we are</td>
+                        <td>Contact us</td>
+                        <td>Optional services and fees</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Careers</td>
+                        <td>Feedvack</td>
+                        <td>Corporate travel</td>
+                        <td>Vistit our blog</td>
+                    </tr>
+                    <tr>
+                        <td>Newsroom</td>
+                        <td>Travel Advisories</td>
+                        <td>EasyBiz</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Legal</td>
+                        <td>Customer commitment</td>
+                        <td>Travel agents</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Privacy notice</td>
+                        <td>Tarmac delay plan</td>
+                        <td>Cargo</td>
+                        <td></td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

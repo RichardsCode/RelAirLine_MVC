@@ -23,8 +23,9 @@ namespace RelAirLine_MVC
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/relStyle.css",
+                      "~/Content/bootstrap.css"
+                      ));
         }
     }
 }

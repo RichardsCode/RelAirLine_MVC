@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "SignIn";
+}
+
+<section>
+    <div class="container p-5">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Sign In</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                        <span><i class="fab fa-facebook-square"></i></span>
+                        <span><i class="fab fa-google-plus-square p-1"></i></span>
+                        <span><i class="fab fa-twitter-square"></i></span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" name="EmailAddress" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" name="Password" placeholder="password">
+                        </div>
+                        <div class="row align-items-center remember">
+                            <input type="checkbox">Remember Me
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Login" @*onclick="clicked_signin();*@return false;" class="btn float-right login_btn bg-success text-light">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        Don't have an account?<a href="sign_up.html">Sign Up</a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="contact_page.html">Forgot your password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="text-center pb-5">
+        <h1>BOOK YOUR FLIGHT WITH US.</h1><BR /> <h4><b>FLY SMART. LAND HAPPY</b></h4>
+    </div>
+</section>
+
