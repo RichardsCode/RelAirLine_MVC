@@ -1,6 +1,7 @@
 ﻿
 @{
-    ViewBag.Title = "SignIn";
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <section>
@@ -16,7 +17,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form method="post">
+                    <form action="Verify" method="post">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -34,7 +35,7 @@
                             <input type="checkbox">Remember Me
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Login" @*onclick="clicked_signin();*@return false;" class="btn float-right login_btn bg-success text-light">
+                            <input type="submit" value="Login" class="btn float-right login_btn bg-success text-light">
                         </div>
                     </form>
                 </div>

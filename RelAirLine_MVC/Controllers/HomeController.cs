@@ -61,49 +61,12 @@ namespace RelAirLine_MVC.Controllers
                                model.EmailAddress,
                                model.Password);
 
-                return RedirectToAction("SignIn");
+                return RedirectToAction("SignIn", "Account");
             }
 
             return View();
         }
-
-        [HttpGet]
-        public ActionResult SignIn()
-        {
-            ViewBag.Message = "Sign In";
-            return View();
-        }
-
-        SqlConnection con = new SqlConnection();
-        SqlCommand com = new SqlCommand();
-        SqlDataReader dr;
-
-
-        void connectionString()
-        {
-            con.ConnectionString = "data sourrce=MSSQLLocalDB; database=AirLineDb; security = SSPI;";
-        }
-
-        public ActionResult Verify(CustomerModel cst)
-        {
-            connectionString();
-            con.Open();
-            com.Connection = con;
-            com.CommandText = "select * from Customer where username='"+cst.EmailAddress+"' and password='"+cst.Password+ "'";
-            dr = com.ExecuteReader();
-            if (dr.Read())
-            {
-                con.Close();
-                return View("Contact");
-            }
-            else
-            {
-                con.Close();
-                return View("Index");
-            }
-            
-            
-        }
+ 
     }
 }
 
